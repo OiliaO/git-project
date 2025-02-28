@@ -1,5 +1,7 @@
 import javax.swing.*;
 import packages.informationPage;
+import java.awt.Font;
+
 
 public class Main {
 
@@ -11,6 +13,8 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
+        Font customFont = new Font("Arial", Font.BOLD, 16);
+
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(null);
@@ -19,10 +23,12 @@ public class Main {
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
         title.setBounds(10, 10, 100, 20);
+        title.setFont(customFont);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
         startButton.setBounds(10, 40, 100, 20);
+        startButton.setFont(customFont);
 
         // Add components to the panel
         panel.add(title);
