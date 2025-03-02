@@ -1,5 +1,4 @@
 package packages;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,12 +11,17 @@ public class informationPage {
         panel.setLayout(new BoxLayout(panel , BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.YELLOW);
 
+        Font customFont = new Font("Arial", Font.BOLD, 16);
+
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("اسم");
+
         JPanel namePanel = new JPanel();
         JTextField nameField = new JTextField(15);
         namePanel.add(nameLabel);
+        nameLabel.setFont(customFont);
         namePanel.add(nameField);
+        nameField.setFont(customFont);
         namePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
         nameField.setAlignmentX(Component.CENTER_ALIGNMENT);
         nameLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -26,9 +30,12 @@ public class informationPage {
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("سن");
         JPanel agePanel = new JPanel();
+        ageLabel.setFont(customFont);
         JTextField ageField = new JTextField(15);
+        ageField.setFont(customFont);
         agePanel.add(ageLabel);
         agePanel.add(ageField);
+        agePanel.setFont(customFont);
         agePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
         ageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         ageField.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -36,6 +43,7 @@ public class informationPage {
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("ایمیل");
+        emailLabel.setFont(customFont);
         JPanel emailPanel = new JPanel();
         JTextField emailField = new JTextField(15);
         emailPanel.add(emailLabel);
@@ -43,6 +51,7 @@ public class informationPage {
         emailPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
         emailLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         emailField.setAlignmentX(Component.CENTER_ALIGNMENT);
+        emailField.setFont(customFont);
         emailPanel.setBackground(Color.YELLOW);
 
 
@@ -50,9 +59,13 @@ public class informationPage {
         JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
         JPanel levelPanel = new JPanel();
         JRadioButton level1 = new JRadioButton("مبتدی");
+        level1.setFont(customFont);
         JRadioButton level2 = new JRadioButton("متوسط");
+        level2.setFont(customFont);
         JRadioButton level3 = new JRadioButton("پیشرفته");
+        level3.setFont(customFont);
         JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        level4.setFont(customFont);
         levelPanel.add(levelLabel);
         levelPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
         levelPanel.setBackground(Color.YELLOW);
@@ -70,7 +83,9 @@ public class informationPage {
 
         // Next Page Button
         JButton nextButton = new JButton("صفحه بعد");
+
         JPanel nextPanel = new JPanel();
+        nextButton.setFont(customFont);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);

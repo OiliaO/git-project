@@ -12,21 +12,26 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
+        Font customFont = new Font("Arial", Font.BOLD, 16);
+
         // Create and configure the main panel
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBackground(Color.YELLOW);
 
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
+
         JPanel titlePanel = new JPanel();
         titlePanel.add(title);
         titlePanel.setBackground(Color.YELLOW);
+              title.setFont(customFont);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(startButton , BorderLayout.CENTER);
         buttonPanel.setBackground(Color.YELLOW);
+              startButton.setFont(customFont);
 
         // Add components to the panel
         panel.add(titlePanel, BorderLayout.NORTH);
