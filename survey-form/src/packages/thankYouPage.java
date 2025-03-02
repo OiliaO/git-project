@@ -13,7 +13,8 @@ public class thankYouPage {
         Font customFont = new Font("Arial", Font.BOLD, 16);
 
         // Create thank you label
-        JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+
+        JLabel thankYouLabel = new JLabel("Thank you for your participation!");
 
         thankYouLabel.setHorizontalAlignment(SwingConstants.CENTER);
         thankYouLabel.setVerticalAlignment(SwingConstants.CENTER);

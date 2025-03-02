@@ -14,9 +14,11 @@ public class informationPage {
         Font customFont = new Font("Arial", Font.BOLD, 16);
 
         // Name Label and Text Field
-        JLabel nameLabel = new JLabel("اسم");
+
+        JLabel nameLabel = new JLabel("Name");
 
         JPanel namePanel = new JPanel();
+
         JTextField nameField = new JTextField(15);
         namePanel.add(nameLabel);
         nameLabel.setFont(customFont);
@@ -28,9 +30,11 @@ public class informationPage {
         namePanel.setBackground(Color.YELLOW);
 
         // Age Label and Text Field
-        JLabel ageLabel = new JLabel("سن");
+
+        JLabel ageLabel = new JLabel("Age");
         JPanel agePanel = new JPanel();
         ageLabel.setFont(customFont);
+
         JTextField ageField = new JTextField(15);
         ageField.setFont(customFont);
         agePanel.add(ageLabel);
@@ -42,9 +46,10 @@ public class informationPage {
         agePanel.setBackground(Color.YELLOW);
 
         // Email Label and Text Field
-        JLabel emailLabel = new JLabel("ایمیل");
+        JLabel emailLabel = new JLabel("Email");
         emailLabel.setFont(customFont);
         JPanel emailPanel = new JPanel();
+      
         JTextField emailField = new JTextField(15);
         emailPanel.add(emailLabel);
         emailPanel.add(emailField);
@@ -56,15 +61,16 @@ public class informationPage {
 
 
         // Software Familiarity Level
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
+
+        JLabel levelLabel = new JLabel("Software Familiarity Level");
         JPanel levelPanel = new JPanel();
-        JRadioButton level1 = new JRadioButton("مبتدی");
+        JRadioButton level1 = new JRadioButton("Beginner");
         level1.setFont(customFont);
-        JRadioButton level2 = new JRadioButton("متوسط");
+        JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setFont(customFont);
-        JRadioButton level3 = new JRadioButton("پیشرفته");
+        JRadioButton level3 = new JRadioButton("Advanced");
         level3.setFont(customFont);
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        JRadioButton level4 = new JRadioButton("No Experience");
         level4.setFont(customFont);
         levelPanel.add(levelLabel);
         levelPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -82,10 +88,11 @@ public class informationPage {
         levelPanel.add(level4);
 
         // Next Page Button
-        JButton nextButton = new JButton("صفحه بعد");
+        JButton nextButton = new JButton("Next Page");
 
         JPanel nextPanel = new JPanel();
         nextButton.setFont(customFont);
+
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);
