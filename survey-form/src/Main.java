@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey Form");
-        frame.setSize(600, 600);
+        frame.setSize(800, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
